@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subdomain Enumeration</title>
+  <meta name="description" content="Identify subdomains during an authorized security assessment.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="badge-tag">
+        <span class="pulse-dot"></span> Security Assessment
+      </div>
+      <h1>Subdomain Enumeration</h1>
+      <p class="description">Identify subdomains during an authorized security assessment.</p>
+    </header>
+
+    <!-- Ethical Use Warning -->
+    <div class="warning-banner" role="alert">
+      <span class="warning-icon">⚠</span>
+      <span>Use only on domains you own or have permission to assess.</span>
+    </div>
+
+    <!-- Scan Form Card -->
+    <main class="card">
+      <form id="scanForm" class="search-form">
+        <div class="input-group">
+          <input 
+            type="text" 
+            id="domain" 
+            placeholder="Enter domain (example.com)" 
+            autocomplete="off" 
+            spellcheck="false"
+          >
+          <button type="submit" id="scanButton" class="btn-primary">
+            Enumerate Subdomains
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Results Display -->
+    <div id="results" class="results-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
