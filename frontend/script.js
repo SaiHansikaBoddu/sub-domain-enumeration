@@ -35,7 +35,7 @@ scanForm.addEventListener("submit", async (e) => {
 
   try {
     // 4. Send POST request to Express backend
-    const response = await fetch("http://localhost:5000/api/enumerate", {
+    const response = await fetch("https://sub-domain-enumeration-91ty.onrender.com/api/enumerate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -105,7 +105,7 @@ scanForm.addEventListener("submit", async (e) => {
     resultsDiv.innerHTML = `
       <div class="message error">
         Unable to connect to backend server.<br>
-        Make sure the backend is running on port 5000.
+        Make sure the backend server is running
       </div>
     `;
   } finally {
